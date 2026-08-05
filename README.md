@@ -1,2 +1,1 @@
-# Character Profile
-Character profile site
+N/A
