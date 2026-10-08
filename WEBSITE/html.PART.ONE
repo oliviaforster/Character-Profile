@@ -78,7 +78,7 @@ h1 { font-size: 50px; }
 
 <h2>Confident. Ambitious. Unapologetically Olivia.</h2>
 
-<p> Welcome to Olivia's character profile — a closer look at her personality, ambitions, style and the qualities that make her completely unique. </p>
+<p> Welcome to my character profile - a project I have taken on to demonstrate my skills but to also allow you to get to know me better </p>
 
 <a href="About.html" class="button"> Discover Olivia </a>
 
@@ -88,9 +88,9 @@ h1 { font-size: 50px; }
 
 <!-- About Section --> <section class="about">
 
-<h2>Meet Olivia</h2>
+<h2>Meet me</h2>
 
-<p> Olivia Forster is a strong and confident character with ambition, personality and a story of her own. Explore the website to discover more about who she is, what motivates her and what makes her stand out. </p>
+<p> Hi! Explore my website to discover more about who I am, what motivates me and what makes me stand out. </p>
 
 </section>
 
