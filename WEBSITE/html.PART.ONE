@@ -1,73 +1,27 @@
-<html>
+<!DOCTYPE html> <html lang="en"> <head> <meta charset="UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0"> <title>Olivia Forster: My Character Profile</title>
 
-<head›
+<style> ul { list-style-type: none; font-family: Consolas, monospace; margin: 30px; padding: 10px; overflow: auto; background-color: black; }
 
-‹title› Olivia Forster: My Character Profile </title›
+li { float: left; }
 
-</head>
+li a { display: block; color: #ffffff; text-align: center; padding: 10px 80px; text-decoration: none; }
 
-‹style>
+li a:hover { background-color: #F5278E; }
 
-ul {
+.active { background-color: black; }
 
-list-style-type: none; font-family: consolas;
+h1 { color: white; font-family: Consolas, monospace; }
 
-margin: 30;
+p { color: white; font-family: Consolas, monospace; text-align: center; }
 
-padding: 10; overflow: auto;
+body { background-color: #F52776; margin: 0; } </style> </head>
 
-background-color: black;
+<body>
 
-}
+<ul> <li><a href="Homepage.html">Home</a></li> <li><a href="About.html">About me</a></li> <li><a href="Contact.html">Contact</a></li> </ul>
 
-1i {
+<center> <h1> <marquee>Olivia Forster</marquee> </h1>
 
-float: left;
+<p>Welcome to my character profile.</p> </center>
 
-li a {
-
-display: block; jolor: #ffffff;
-
-text-align: center;
-
-padding: 10px 80px;
-
-text-decoration: none;
-
-li a: hover i
-
-background-color: #F5278E;
-
-• active {
-
-background-color: black;
-
-{
-
-1{color:white; font-family:consolas}
-
-{color :white; font-family:consolas} ody{background-color:#F52776;} /style› body>
-
-‹ul>
-
-‹li› ‹a href="Homepage.html">Hоmе</a></li>
-
-‹li› ‹a href="postpunk.html"›Post punk</ax</li>
-
-‹li › ‹a href="indie.html">Indie‹/ax</li> piz ‹a href="contact.htm1"›contact</a></li»
-
-</ul>
-
-<center><h1><marquee› Retro Manchester </marquee› </h1>
-
-‹p> welcome to Retro Manchester your number one source for 70s' to 90's music. ‹/p> </body>
-
-<br>
-
-‹iframe width="800" height="400" src="https://www.youtube.com/embed/TDe1DqxwJoc?si-8_M2Gp1Cpoect3Jd" title="YouTube video player" frameborder="" allow-"accelerometer; autoplay; clipboard-
-
-<br> <img
-
-src= "https://upload.wikimedia.org/wikipedia/en/f/ff/Stoneroses.jpg" height="400" width="400" alt="The Stone Roses Album Cover">
-
-<img src= "https://cdn-images.dzcdn.net/images/artist/07a91a26e61c06353797329c7c6a4b15/1900x1900-000000-81-0-0. jpg" height="400" width="400" alt="Oasis"/>
+</body> </html>
