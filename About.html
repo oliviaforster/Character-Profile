@@ -44,4 +44,202 @@ nav ul li a:hover { color: #f7b6cf; }
 
 /* Previous and Next Buttons */
 
-.prev, .next { cursor: pointer; position: absolute; top: 50%; transform: translateY(-50%); padding: 12px 16px; color: white; background-color: #222222
+.prev, .next { cursor: pointer; position: absolute; top: 50%; transform: translateY(-50%); padding: 12px 16px; color: white; background-color: #222222; border: none; border-radius: 50%; font-size: 18px; transition: 0.3s; }
+
+.prev { left: 30px; }
+
+.next { right: 30px; }
+
+.prev:hover, .next:hover { background-color: #d66b93; }
+
+/* Dots */
+
+.dots { text-align: center; margin-top: 15px; }
+
+.dot { cursor: pointer; height: 10px; width: 10px; margin: 0 4px; background-color: #e5b4c6; border-radius: 50%; display: inline-block; transition: 0.3s; }
+
+.dot.active, .dot:hover { background-color: #d66b93; }
+
+/* About Me Guide */
+
+.about { background-color: #222222; padding: 60px 10%; color: white; }
+
+.about h2 { text-align: center; color: #f7b6cf; font-size: 32px; margin-bottom: 35px; }
+
+.about-container { max-width: 900px; margin: auto; display: grid; grid-template-columns: 1fr 1fr; gap: 25px; }
+
+.about-box { background-color: #333333; padding: 25px; border-radius: 12px; }
+
+.about-box h3 { color: #f7b6cf; margin-bottom: 12px; font-size: 20px; }
+
+.about-box p { color: #eeeeee; line-height: 1.7; font-size: 15px; }
+
+/* Footer */
+
+footer { background-color: #fff5f8; text-align: center; padding: 20px; color: #777777; font-size: 12px; }
+
+/* Mobile */
+
+@media (max-width: 700px) {
+
+nav { flex-direction: column; gap: 15px; }
+
+nav ul { gap: 15px; }
+
+.heading h1 { font-size: 38px; }
+
+.slide img { height: 300px; }
+
+.about-container { grid-template-columns: 1fr; }
+
+}
+
+</style> </head>
+
+<body>
+
+<!-- Navigation -->
+
+<nav>
+
+<div class="logo"> OLIVIA ♡ </div>
+
+<ul> <li><a href="Homepage.html">Home</a></li> <li><a href="About.html">About Me</a></li> <li><a href="Contact.html">Contact</a></li> </ul>
+
+</nav>
+
+<!-- Page Heading -->
+
+<section class="heading">
+
+<p>GET TO KNOW ME</p>
+
+<h1>About <span>Me ♡</span></h1>
+
+<div class="intro"> A little look into who I am, what I love and what makes me, me. </div>
+
+</section>
+
+<!-- PHOTO SLIDESHOW -->
+
+<section class="slideshow">
+
+<!-- CHANGE THE IMAGE NAMES BELOW to match your own pictures.
+
+Example: <img src="myphoto.jpg">
+
+Make sure your pictures are saved in the same folder as this HTML file. -->
+
+<div class="slide"> <img src="photo1.jpg" alt="Photo of Olivia"> </div>
+
+<div class="slide"> <img src="photo2.jpg" alt="Photo of Olivia"> </div>
+
+<div class="slide"> <img src="photo3.jpg" alt="Photo of Olivia"> </div>
+
+<!-- Previous / Next buttons -->
+
+<button class="prev" onclick="changeSlide(-1)">❮</button> <button class="next" onclick="changeSlide(1)">❯</button>
+
+<!-- Dots -->
+
+<div class="dots">
+
+<span class="dot" onclick="showSlide(1)"></span> <span class="dot" onclick="showSlide(2)"></span> <span class="dot" onclick="showSlide(3)"></span>
+
+</div>
+
+</section>
+
+<!-- ABOUT ME GUIDE -->
+
+<section class="about">
+
+<h2>A Little About Me ♡</h2>
+
+<div class="about-container">
+
+<!-- BOX 1 -->
+
+<div class="about-box">
+
+<h3>♡ Who I Am</h3>
+
+<p> WRITE ABOUT YOURSELF HERE. You could include your personality, age, where you are from or anything else you would like people to know. </p>
+
+</div>
+
+<!-- BOX 2 -->
+
+<div class="about-box">
+
+<h3>♡ My Personality</h3>
+
+<p> WRITE ABOUT YOUR PERSONALITY HERE. Think about your strengths, qualities and what makes you unique. </p>
+
+</div>
+
+<!-- BOX 3 -->
+
+<div class="about-box">
+
+<h3>♡ My Interests</h3>
+
+<p> WRITE ABOUT YOUR INTERESTS HERE. You could talk about hobbies, music, films, sports, fashion or anything you enjoy. </p>
+
+</div>
+
+<!-- BOX 4 -->
+
+<div class="about-box">
+
+<h3>♡ My Goals</h3>
+
+<p> WRITE ABOUT YOUR GOALS HERE. Talk about your future ambitions, things you want to achieve or something you are working towards. </p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- Footer -->
+
+<footer>
+
+© 2026 Olivia Forster ♡ Character Profile
+
+</footer>
+
+<!-- SLIDESHOW JAVASCRIPT -->
+
+<script>
+
+let slideIndex = 1;
+
+showSlide(slideIndex);
+
+function changeSlide(n) { showSlide(slideIndex += n); }
+
+function showSlide(n) {
+
+let slides = document.getElementsByClassName("slide"); let dots = document.getElementsByClassName("dot");
+
+if (n > slides.length) { slideIndex = 1; }
+
+if (n < 1) { slideIndex = slides.length; }
+
+for (let i = 0; i < slides.length; i++) { slides[i].style.display = "none"; }
+
+for (let i = 0; i < dots.length; i++) { dots[i].className = dots[i].className.replace(" active", ""); }
+
+slides[slideIndex - 1].style.display = "block";
+
+dots[slideIndex - 1].className += " active";
+
+}
+
+</script>
+
+</body>
+
+</html>
