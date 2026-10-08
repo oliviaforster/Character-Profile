@@ -1,27 +1,105 @@
-<!DOCTYPE html> <html lang="en"> <head> <meta charset="UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0"> <title>Olivia Forster: My Character Profile</title>
+<!DOCTYPE html> <html lang="en">
 
-<style> ul { list-style-type: none; font-family: Consolas, monospace; margin: 30px; padding: 10px; overflow: auto; background-color: black; }
+<head> <meta charset="UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-li { float: left; }
+<title>Olivia Forster | Character Profile</title>
 
-li a { display: block; color: #ffffff; text-align: center; padding: 10px 80px; text-decoration: none; }
+<style>
 
-li a:hover { background-color: #F5278E; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
 
-.active { background-color: black; }
+body { background: #f8e7ee; color: #171717; font-family: Arial, sans-serif; }
 
-h1 { color: white; font-family: Consolas, monospace; }
+/* Navigation Bar */ nav { background-color: #111111; padding: 20px 8%; display: flex; justify-content: space-between; align-items: center; }
 
-p { color: white; font-family: Consolas, monospace; text-align: center; }
+.logo { color: #f7b6cf; font-size: 22px; font-weight: bold; letter-spacing: 2px; }
 
-body { background-color: #F52776; margin: 0; } </style> </head>
+nav ul { list-style: none; display: flex; gap: 35px; }
+
+nav ul li a { color: white; text-decoration: none; font-size: 14px; text-transform: uppercase; letter-spacing: 1px; transition: 0.3s; }
+
+nav ul li a:hover { color: #f7b6cf; }
+
+/* Hero Section */ .hero { min-height: 80vh; display: flex; justify-content: center; align-items: center; text-align: center; padding: 60px 20px; }
+
+.hero-content { max-width: 800px; }
+
+.small-title { color: #c45a82; font-size: 14px; text-transform: uppercase; letter-spacing: 4px; margin-bottom: 20px; }
+
+h1 { font-family: Georgia, serif; font-size: 80px; color: #111111; margin-bottom: 15px; }
+
+.hero h2 { font-size: 22px; font-weight: normal; color: #555555; margin-bottom: 25px; }
+
+.hero p { font-size: 17px; line-height: 1.7; color: #555555; max-width: 600px; margin: 0 auto 35px; }
+
+/* Button */ .button { display: inline-block; background-color: #111111; color: white; padding: 15px 35px; text-decoration: none; text-transform: uppercase; letter-spacing: 2px; font-size: 13px; transition: 0.3s; }
+
+.button:hover { background-color: #c45a82; }
+
+/* About Section */ .about { background-color: #111111; color: white; padding: 80px 10%; text-align: center; }
+
+.about h2 { font-family: Georgia, serif; font-size: 42px; margin-bottom: 20px; color: #f7b6cf; }
+
+.about p { max-width: 700px; margin: auto; line-height: 1.8; color: #dddddd; }
+
+/* Footer */ footer { background-color: #f8e7ee; text-align: center; padding: 25px; color: #555555; font-size: 13px; }
+
+/* Mobile */ @media (max-width: 700px) {
+
+nav { flex-direction: column; gap: 20px; }
+
+nav ul { gap: 15px; }
+
+h1 { font-size: 50px; }
+
+.hero { min-height: 70vh; }
+
+}
+
+</style> </head>
 
 <body>
 
-<ul> <li><a href="Homepage.html">Home</a></li> <li><a href="About.html">About me</a></li> <li><a href="Contact.html">Contact</a></li> </ul>
+<!-- Navigation --> <nav>
 
-<center> <h1> <marquee>Olivia Forster</marquee> </h1>
+<div class="logo"> OLIVIA </div>
 
-<p>Welcome to my character profile.</p> </center>
+<ul> <li><a href="Homepage.html">Home</a></li> <li><a href="About.html">About Me</a></li> <li><a href="Contact.html">Contact</a></li> </ul>
 
-</body> </html>
+</nav>
+
+<!-- Main Hero Section --> <section class="hero">
+
+<div class="hero-content">
+
+<div class="small-title"> Character Profile </div>
+
+<h1>Olivia Forster</h1>
+
+<h2>Confident. Ambitious. Unapologetically Olivia.</h2>
+
+<p> Welcome to Olivia's character profile — a closer look at her personality, ambitions, style and the qualities that make her completely unique. </p>
+
+<a href="About.html" class="button"> Discover Olivia </a>
+
+</div>
+
+</section>
+
+<!-- About Section --> <section class="about">
+
+<h2>Meet Olivia</h2>
+
+<p> Olivia Forster is a strong and confident character with ambition, personality and a story of her own. Explore the website to discover more about who she is, what motivates her and what makes her stand out. </p>
+
+</section>
+
+<!-- Footer --> <footer>
+
+© 2026 Olivia Forster | Character Profile
+
+</footer>
+
+</body>
+
+</html>
